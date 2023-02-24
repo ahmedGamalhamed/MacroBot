@@ -1,0 +1,23 @@
+CTRL SHIFT + 
+----------------------------------------------------------------------
+E : app.dext.com/en/login >> Logs-in
+E : app.dext.com/gamma/costs/inbox >> Clicks First Record
+----------------------------------------------------------------------
+Q : docs.google.com/spreadsheets >> Deletes Sheet name and waits for new title
+Q : go.xero.com/BankRec >> Create BankRule with Payee hovered on
+----------------------------------------------------------------------
+U : xero.com/BankRec >> Loops BankRecords "FIND & MATCH"
+U : mail.google.com >> Creates New Gmail Mail and Populates Subject And Body
+U : docs.google.com/spreadsheets >> will Print Current SpreadSheet into pdf
+----------------------------------------------------------------------
+Y : xero.com/!XX-XX/dashboard >> Loops through Organziations and prints each ORG Last Finanical Year
+Y : go.xero.com/BankRec >> Loops Through the visible OK buttons
+----------------------------------------------------------------------
+Z : app.dext.com/gamma/costs >> will set Supplier Rule for current supply
+Z : xero.com/BankRec >>>> Opens CreateNewBankRule in new window
+----------------------------------------------------------------------
+X : xero.com/BankRec >>> clicks OK on Selected Bank statement
+----------------------------------------------------------------------
++ : Xero.com/Setup/FinanicalSetitngs >> Increase LockDates
+----------------------------------------------------------------------
+- : Xero.com/Setup/FinanicalSetitngs >> Decrease LockDates
