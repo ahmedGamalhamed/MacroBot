@@ -12,10 +12,8 @@ if (document.readyState !== "complete") {
 async function initApplication() {
   console.log("X-Script");
   let url = location.href;
-  if (url.includes("go.xero.com/BankRec/BankRec.aspx")) {
-    runfileHere("./handlers/XeroBankRecordOK.js");
-  } else if (url.includes("https://app.dext.com/gamma/costs/inbox")) {
-    runfileHere("./handlers/dext-select-description.js");
+  if (url.includes("dext.com/gamma/costs/inbox")) {
+    DexSetter("Tax", "20% (VAT on Expenses)");
   } else {
     console.log("This Site Doesnt Inlcude this Key Macro");
   }

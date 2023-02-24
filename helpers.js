@@ -182,3 +182,11 @@ function popup(url) {
   var popup = window.open(url, "popup_window", params);
   popup.moveTo(0, 0);
 }
+function DexSetter(rowName, optionName) {
+  options = {
+    rowName,
+    optionName,
+  };
+  setMemory(options);
+  runfileHere("./handlers/Dex-Tax-Setter.js");
+}

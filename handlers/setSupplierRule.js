@@ -20,20 +20,15 @@ async function initSetSupplierRule() {
   description = description[0].children[0].value;
 
   let dates = await WaitForQueryAll(".d-datepicker-control", 100);
-  console.log(dates);
   let date1 = dates[0].children[0].children[0].value;
-  let date2, DueIn;
-  if (dates.length == 1) {
-    date2 = false;
-  } else {
+  let date2 = false,
+    DueIn = "";
+  if (dates.length !== 1) {
     date2 = dates[1].children[0].children[0].value;
   }
   if (date2) {
     DueIn = DueDater(date1, date2); // Due In after calculation
-  } else {
-    DueIn = "";
   }
-
   let setRuleBtn = await WaitForQueryAll(".field-addendum", 100);
 
   setRuleBtn = setRuleBtn[0].children[0];

@@ -21,3 +21,7 @@ X : xero.com/BankRec >>> clicks OK on Selected Bank statement
 + : Xero.com/Setup/FinanicalSetitngs >> Increase LockDates
 ----------------------------------------------------------------------
 - : Xero.com/Setup/FinanicalSetitngs >> Decrease LockDates
+----------------------------------------------------------------------
+F : xero.com/BankRec >> clicks Discuss
+F : dext.com/gamma/costs/inbox >> Focus on catagory
+----------------------------------------------------------------------

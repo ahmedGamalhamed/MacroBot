@@ -25,6 +25,5 @@ async function initApplication() {
   let DiscussBtn = await ChildInParent(currentStatment, ".t4");
   simulateMouseClick(DiscussBtn);
   let DiscussInput = await ChildInParent(currentStatment, "[aria-label='Comment']");
-  console.log(DiscussInput);
   DiscussInput.focus();
 }
