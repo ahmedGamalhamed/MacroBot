@@ -14,7 +14,7 @@ async function initApplication() {
   if (url.includes("https://go.xero.com/Setup/FinancialSettings.aspx")) {
     runfileHere("./handlers/XeroFinanical-decrease-month.js");
   } else if (url.includes("xero.com")) {
-    location.href = "https://go.xero.com/Setup/FinancialSettings.aspx";
+    popup("https://go.xero.com/Setup/FinancialSettings.aspx");
   }
 }
 
