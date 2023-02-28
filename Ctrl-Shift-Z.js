@@ -12,7 +12,7 @@ if (document.readyState !== "complete") {
 async function initApplication() {
   console.log("Z-Script");
   let url = location.href;
-  if (url.includes("app.dext.com/gamma/costs")) {
+  if (url.includes("https://app.dext.com/" && "gamma/costs")) {
     runfileHere("./handlers/setSupplierRule.js");
   } else if (url.includes("go.xero.com/BankRec/BankRec.aspx")) {
     runfileHere("./handlers/CreateBankRule-NewWindow.js");

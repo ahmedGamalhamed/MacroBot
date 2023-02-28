@@ -25,7 +25,7 @@ async function initApp() {
       console.log(key, ctrl, shift);
     }
   });
-  if (url.includes("https://app.dext.com/gamma")) {
+  if (url.includes("https://app.dext.com/" && "gamma")) {
     let collapse = document.querySelectorAll(".js-sidebar-collapse");
     if (collapse.length > 0 && collapse[0].textContent == "Collapse menu") {
       collapse[0].click();
