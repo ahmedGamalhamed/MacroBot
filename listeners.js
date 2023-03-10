@@ -17,7 +17,7 @@ async function initApp() {
   }, 4000);
 
   document.addEventListener("keydown", (e) => {
-    let key = e.key;
+    let key = e.code[3];
     let ctrl = e.ctrlKey;
     let shift = e.shiftKey;
     let Alt = e.altKey;
