@@ -20,8 +20,9 @@ async function initApp() {
     let key = e.key;
     let ctrl = e.ctrlKey;
     let shift = e.shiftKey;
-    if (key !== "Shift" && key !== "Alt" && key !== "" && ctrl && shift) {
-      chrome.runtime.sendMessage({ order: "Macro", key: key, shift: shift, ctrl: ctrl });
+    let Alt = e.altKey;
+    if (key !== "Shift" && key !== "Alt" && key !== "Control" && key !== "" && (ctrl || shift)) {
+      chrome.runtime.sendMessage({ order: "Macro", key, shift, ctrl, Alt });
       console.log(key, ctrl, shift);
     }
   });
@@ -55,5 +56,7 @@ async function initApp() {
         }
       });
     }, 1000);
+  } else if (url.includes("xero.com")) {
+    runfileHere("./handlers/catchXeroOrgCode.js");
   }
 }

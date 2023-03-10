@@ -22,7 +22,9 @@ chrome.runtime.onMessage.addListener(function (response, sender, sendResponse) {
     let key = response.key;
     let shift = response.shift;
     let ctrl = response.ctrl;
+    let alt = response.Alt;
     if (key && shift && ctrl) {
+      console.log(Combos);
       try {
         if (!Object.keys(Combos).includes(key)) {
           console.log("Key Not Added to Combos");
@@ -30,9 +32,10 @@ chrome.runtime.onMessage.addListener(function (response, sender, sendResponse) {
         }
       } catch {
         console.log("Key Not Added to Combos");
+        return;
       }
-
-      file = `Ctrl-Shift-${key}.js`;
+      alt ? (file = `Ctrl-Shift-Alt-${key}.js`) : (file = `Ctrl-Shift-${key}.js`);
+      console.log(file);
       if (Object.keys(Combos).includes(key)) {
         if (Combos[key].TabAndScript) {
           chrome.tabs.create(
